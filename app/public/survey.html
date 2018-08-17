@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+	<title>Friend Finder</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <br><h2>Survey Questions</h2>      
+    </div>
+    <hr>
+
+    <h3><strong>About You</strong></h3>
+    
+    <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+    <br>
+    <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+    <hr>
+
+    <h3><strong>Question 1</strong></h3>
+    <h5>The most important thing about a friendship is having somebody to
+        confide in.</h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q1" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <h3><strong>Question 2</strong></h3>
+    <h5>If I had to pick, I would rather have a friend who feels the same way
+    about life as I do, than a friend who enjoys doing the same things as me. </h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q2" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <h3><strong>Question 3</strong></h3>
+    <h5>I like to be close to people. </h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q3" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <h3><strong>Question 4</strong></h3>
+    <h5>When I talk with friends on the phone, it is usually to make arrangements
+    rather than to chat. </h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q4" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <h3><strong>Question 5</strong></h3>
+    <h5>My friends value me more as someone to have fun with than as someone
+    who is a support to them. </h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q5" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <h3><strong>Question 6</strong></h3>
+    <h5>I prefer meeting a friend for a chat, e.g. at a pub, at a café instead of meeting for a specific activity.</h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q6" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <h3><strong>Question 7</strong></h3>
+    <h5>If I moved to a new area, I would put more effort into making new
+    friends than staying in touch with old friends. </h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q7" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <h3><strong>Question 8</strong></h3>
+    <h5> If a friend had a problem, I would be better at discussing their feelings
+    about the problem than coming up with practical solutions. </h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q8" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <h3><strong>Question 9</strong></h3>
+    <h5> When I have a personal problem, I feel that it is better to share it with a
+    friend.</h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q9" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <h3><strong>Question 10</strong></h3>
+    <h5> If I have to say something critical to a friend, I think it’s best to just come
+    right out and say it. </h5>
+    <div class="form-group">
+        <select class="selectpicker form-control" id="q10" title="Select an Option" required>
+            <option selected disabled>Select an Option</option>
+            <option value='1'>1 (Stongly Disagree)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (Strongly Agree)</option>
+        </select>
+    </div>
+
+    <!-- <div class="submit"> -->
+        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal" id="submit">
+          <h2>Submit</h2>
+        </button>
+    <!-- </div> -->
+    <hr>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Friend Found!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label id="newFriendName"></label>
+            <img id="newFriendImage">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="tryagain">Try again!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <script type="text/javascript">
+            $(document).on("click", "#tryagain", function(){
+                location.reload();
+            })
+        $(document).on("click", "#submit", function(){
+            var postUrl = '/api/friends';
+            var userData ={};
+            var name = document.getElementById("name").value;
+            var photo = document.getElementById("photo").value;
+            
+            var userScores = [];
+            var completedAllScores=true;
+            for(var i=1; i<= 10; i++){
+                var eachRate = document.getElementById("q"+i).options.selectedIndex;
+                if(eachRate === 0){
+                    completedAllScores=false;
+                    break;
+                }else{
+                    userScores.push(eachRate);
+                }
+                
+            }
+            userData['name'] = name;
+            userData['photo'] = photo;
+            userData['scores'] = userScores;
+            if(name==="" || photo==="" || completedAllScores===false){
+                $("#newFriendImage").attr("src", "");
+                return $("#newFriendName").html("Required fields are missing!!");
+            }else{
+                $.ajax({
+                        type: "POST",
+                        url: postUrl,
+                        ContentType: "application/json",
+                        data : {"data": userData},
+                        success: function(response){
+                               $("#newFriendName").html(response.name);
+                               $("#newFriendImage").attr("src", response.photo);
+                               console.log(response);
+                        }
+                });
+
+            }
+        })
+    </script>
+    
+    <footer class="footer">
+      <div class="container">
+	        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/ekhin/Friend-Finder">GitHub Repo</a></p>
+      </div>
+    </footer>
